@@ -24,10 +24,7 @@
 
 ### DB
 
-- tcia ct scan dataset
-- CQ500
 ------- downloading -------
 - MUG500+
-- SkullBreak/SkullFIx
-
-
+- kaggle skull segmentation DB
+- Totalsegmentor v2
