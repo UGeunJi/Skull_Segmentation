@@ -14,6 +14,8 @@
 2. 결손 Subject 생성 - [생성 코드](https://github.com/Jianningli/SciData)
 3. nnUNet V2 Framework
 4. 성능 향상 아이디어 추가
+  - Pre-training
+  - 
    
 
 ### DB
