@@ -10,19 +10,20 @@
 
 ## Process
 
-1. DB 준비 (NC/결손)
-2. 결손 Subject 생성 - [생성 코드](https://github.com/Jianningli/SciData)
-3. nnUNet V2 Framework
-4. 성능 향상 아이디어 추가
-  - Pre-training
-  - 
+1. DB 준비 (NC)
+2. pre-processing
+   - Image Enhancement
+3. Segmentation
+   - Develop
+     - pre-training
+
+4. 결손 Subject 생성 - [생성 코드](https://github.com/Jianningli/SciData)
+5. Imaplant Learning
+   - Develop 
    
 
 ### DB
 
-- HaN Seg
-- MICCAI AutoImplant Challenge
-- CT ORG
 - tcia ct scan dataset
 - CQ500
 ------- downloading -------
