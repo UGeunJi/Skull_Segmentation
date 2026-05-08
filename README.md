@@ -1,14 +1,14 @@
 # Skull_Segmentation
 
 
-## Purpose
+## - Purpose
 
 ```
 두경부 결손 환자 재건 수술을 위한 부품 설계 보조 AI
 ```
 
 
-## Process
+## - Process
 
 
 #### Skull Segmentation &#10145; Skull Implant
@@ -33,7 +33,7 @@
 <br>
 
 
-### DB
+### - DB
 #### Open DB
 - CQ500 (51명)
 - IMPACT (60명)
@@ -43,16 +43,16 @@
 - 삼성병원 (109명)
 
 
-### Model
+### - Model
 
 ```
 U-Net / nnU-Net Version2
 ```
 
-### Pre-processing
+### - Pre-processing Table
 
 | 항목 | U-Net | orient / resampling | nnUNet |
-| --- | --- | --- | --- |
+| :---: | :--: | :--: | :--: |
 | HU clip | [-1000, 3000] | 동일 | 0.5/99.5 percentile (자동) |
 | Norm | /4000 &#10145; uint8 | 동일 | Z-score (자동) |
 | Resampling | X | 사용자 지정 | median spacing (자동) + anisotropy 처리 |
@@ -64,7 +64,86 @@ U-Net / nnU-Net Version2
 
 <br>
 
-### 전처리 / 모델 성능 비교 Table
+### - 전처리 / 모델 성능 비교 Table
+
+<table border="1" style="border-collapse: collapse; width: 100%; table-layout: fixed;">
+    <thead style="background-color: #f2f2f2;">
+        <tr>
+            <th colspan="2" rowspan="2" style="padding: 10px; text-align: center; vertical-align: middle;">Dataset</th>
+            <th rowspan="2" style="text-align: center; vertical-align: middle;">Subjects</th>
+            <th rowspan="2" style="text-align: center; vertical-align: middle;">(Orient / Resample)<br>(2D &rarr; 3D)</th>
+            <th colspan="2" style="text-align: center; vertical-align: middle;">Model</th>
+        </tr>
+        <tr>
+            <th style="text-align: center; vertical-align: middle;">U-Net</th>
+            <th style="text-align: center; vertical-align: middle;">nnU-Net</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="8" style="font-weight: bold; text-align: center; vertical-align: middle;">Experiments</td>
+            <td rowspan="4" style="text-align: center; vertical-align: middle;">삼성서울</td>
+            <td rowspan="2" style="text-align: center; vertical-align: middle;">13</td>
+            <td style="height: 30px;"></td> <td style="text-align: center; vertical-align: middle;">0.9468</td>
+            <td></td> </tr>
+        <tr>
+            <td style="text-align: center; vertical-align: middle;">V</td>
+            <td style="text-align: center; vertical-align: middle;">0.8837</td>
+            <td style="text-align: center; vertical-align: middle;"></td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="text-align: center; vertical-align: middle;">109</td>
+            <td style="height: 30px;"></td>
+            <td style="text-align: center; vertical-align: middle;">0.7859</td>
+            <td style="text-align: center; vertical-align: middle;">0.7878</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; vertical-align: middle;">V</td>
+            <td style="text-align: center; vertical-align: middle;">0.8835</td>
+            <td style="text-align: center; vertical-align: middle;">0.9423</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="text-align: center; vertical-align: middle;">CQ500</td>
+            <td rowspan="2" style="text-align: center; vertical-align: middle;">51</td>
+            <td style="height: 30px;"></td>
+            <td style="text-align: center; vertical-align: middle;">0.9533</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td style="text-align: center; vertical-align: middle;">V</td>
+            <td style="text-align: center; vertical-align: middle;">0.9536</td>
+            <td style="text-align: center; vertical-align: middle;"></td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="text-align: center; vertical-align: middle;">IMPACT</td>
+            <td rowspan="2" style="text-align: center; vertical-align: middle;">60</td>
+            <td style="height: 30px;"></td>
+            <td style="text-align: center; vertical-align: middle;">0.9683</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td style="text-align: center; vertical-align: middle;">V</td>
+            <td style="text-align: center; vertical-align: middle;">0.9018</td>
+            <td style="text-align: center; vertical-align: middle;"></td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="font-weight: bold; text-align: center; vertical-align: middle;">Papers</td>
+            <td style="text-align: center; vertical-align: middle;">Dot et al. (2022)</td>
+            <td style="text-align: center; vertical-align: middle;">453</td>
+            <td style="text-align: center; vertical-align: middle;"></td>
+            <td style="text-align: center; vertical-align: middle;">-</td>
+            <td style="text-align: center; vertical-align: middle;">0.9622</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; vertical-align: middle;">Minnema et al. (2022)</td>
+            <td style="text-align: center; vertical-align: middle;">20</td>
+            <td style="text-align: center; vertical-align: middle;"></td>
+            <td style="text-align: center; vertical-align: middle;">-</td>
+            <td style="text-align: center; vertical-align: middle;">0.94</td>
+        </tr>
+    </tbody>
+</table>
+
 
 
 
