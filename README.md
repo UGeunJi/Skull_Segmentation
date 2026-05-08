@@ -81,6 +81,7 @@ U-Net / nnU-Net Version2
             <th rowspan="2" style="text-align: center; vertical-align: middle;">Subjects</th>
             <th rowspan="2" style="text-align: center; vertical-align: middle;">(Orient / Resample)<br>(2D &rarr; 3D)</th>
             <th colspan="2" style="text-align: center; vertical-align: middle;">Model</th>
+            <th rowspan="2" style="text-align: center; vertical-align: middle;">Patchwork</th>
         </tr>
         <tr>
             <th style="text-align: center; vertical-align: middle;">U-Net</th>
@@ -92,61 +93,72 @@ U-Net / nnU-Net Version2
             <td rowspan="8" style="font-weight: bold; text-align: center; vertical-align: middle;">Experiments</td>
             <td rowspan="4" align="center" style="text-align: center; vertical-align: middle;">삼성서울</td>
             <td rowspan="2" align="center" style="text-align: center; vertical-align: middle;">13</td>
-            <td align="center" style="height: 35px; text-align: center; vertical-align: middle;"></td> <td align="center" style="text-align: center; vertical-align: middle;">0.9468</td>
-            <td align="center" style="text-align: center; vertical-align: middle;"></td>
+            <td align="center" style="height: 35px; text-align: center; vertical-align: middle;">-</td> 
+            <td align="center" style="text-align: center; vertical-align: middle;">0.9468</td>
+            <td align="center" style="text-align: center; vertical-align: middle;">-</td>
+            <td align="center" style="text-align: center; vertical-align: middle;">-</td>
         </tr>
         <tr>
             <td align="center" style="text-align: center; vertical-align: middle;">V</td>
             <td align="center" style="text-align: center; vertical-align: middle;">0.8837</td>
-            <td align="center" style="text-align: center; vertical-align: middle;"></td>
+            <td align="center" style="text-align: center; vertical-align: middle;">-</td>
+            <td align="center" style="text-align: center; vertical-align: middle;">-</td>
         </tr>
         <tr>
             <td align="center" rowspan="2" style="text-align: center; vertical-align: middle;">109</td>
-            <td align="center" style="height: 35px; text-align: center; vertical-align: middle;"></td>
+            <td align="center" style="height: 35px; text-align: center; vertical-align: middle;">-</td>
             <td align="center" style="text-align: center; vertical-align: middle;">0.7859</td>
             <td align="center" style="text-align: center; vertical-align: middle;">0.7878</td>
+            <td align="center" style="text-align: center; vertical-align: middle;">-</td>
         </tr>
         <tr>
             <td align="center" style="text-align: center; vertical-align: middle;">V</td>
             <td align="center" style="text-align: center; vertical-align: middle;">0.8835</td>
-            <td align="center" style="text-align: center; vertical-align: middle;"><strong>0.9423<strong></td>
+            <td align="center" style="text-align: center; vertical-align: middle;"><strong>0.9423</strong></td>
+            <td align="center" style="text-align: center; vertical-align: middle;">-</td>
         </tr>
         <tr>
             <td align="center" rowspan="2" style="text-align: center; vertical-align: middle;">CQ500</td>
             <td align="center" rowspan="2" style="text-align: center; vertical-align: middle;">51</td>
-            <td align="center" style="height: 35px; text-align: center; vertical-align: middle;"></td>
+            <td align="center" style="height: 35px; text-align: center; vertical-align: middle;">-</td>
             <td align="center" style="text-align: center; vertical-align: middle;">0.9533</td>
-            <td align="center" style="text-align: center; vertical-align: middle;"></td>
+            <td align="center" style="text-align: center; vertical-align: middle;">-</td>
+            <td align="center" style="text-align: center; vertical-align: middle;">-</td>
         </tr>
         <tr>
             <td align="center" style="text-align: center; vertical-align: middle;">V</td>
             <td align="center" style="text-align: center; vertical-align: middle;">0.9536</td>
-            <td align="center" style="text-align: center; vertical-align: middle;"></td>
+            <td align="center" style="text-align: center; vertical-align: middle;">-</td>
+            <td align="center" style="text-align: center; vertical-align: middle;">-</td>
         </tr>
         <tr>
             <td align="center" rowspan="2" style="text-align: center; vertical-align: middle;">IMPACT</td>
             <td align="center" rowspan="2" style="text-align: center; vertical-align: middle;">60</td>
-            <td align="center" style="height: 35px; text-align: center; vertical-align: middle;"></td>
+            <td align="center" style="height: 35px; text-align: center; vertical-align: middle;">-</td>
             <td align="center" style="text-align: center; vertical-align: middle;">0.9683</td>
-            <td align="center" style="text-align: center; vertical-align: middle;"></td>
+            <td align="center" style="text-align: center; vertical-align: middle;">-</td>
+            <td align="center" style="text-align: center; vertical-align: middle;">-</td>
         </tr>
         <tr>
             <td align="center" style="text-align: center; vertical-align: middle;">V</td>
             <td align="center" style="text-align: center; vertical-align: middle;">0.9018</td>
-            <td align="center" style="text-align: center; vertical-align: middle;"></td>
+            <td align="center" style="text-align: center; vertical-align: middle;">-</td>
+            <td align="center" style="text-align: center; vertical-align: middle;">-</td>
         </tr>
         <tr style="background-color: #f9f9f9;">
             <td align="center" rowspan="2" style="font-weight: bold; text-align: center; vertical-align: middle;">Papers</td>
             <td align="center" style="text-align: center; vertical-align: middle;">Dot et al. (2022)</td>
             <td align="center" style="text-align: center; vertical-align: middle;">453</td>
-            <td align="center" style="text-align: center; vertical-align: middle;"></td>
+            <td align="center" style="text-align: center; vertical-align: middle;">-</td>
             <td align="center" style="text-align: center; vertical-align: middle;">-</td>
             <td align="center" style="text-align: center; vertical-align: middle;">0.9622</td>
+            <td align="center" style="text-align: center; vertical-align: middle;">-</td>
         </tr>
         <tr style="background-color: #f9f9f9;">
-            <td align="center" style="text-align: center; vertical-align: middle;">Minnema et al. (2022)</td>
+            <td align="center" style="text-align: center; vertical-align: middle;">Steybe et al. (2022)</td>
             <td align="center" style="text-align: center; vertical-align: middle;">20</td>
-            <td align="center" style="text-align: center; vertical-align: middle;"></td>
+            <td align="center" style="text-align: center; vertical-align: middle;">별도 전처리 적용</td>
+            <td align="center" style="text-align: center; vertical-align: middle;">-</td>
             <td align="center" style="text-align: center; vertical-align: middle;">-</td>
             <td align="center" style="text-align: center; vertical-align: middle;">0.94</td>
         </tr>
