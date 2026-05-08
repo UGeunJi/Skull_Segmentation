@@ -34,20 +34,28 @@
 
 
 ### - DB
+
+<br>
+
 #### Open DB
 - CQ500 (51명)
 - IMPACT (60명)
 - Totalsegmentor v2 (63명)
 
+<br>
+
 #### Private DB
 - 삼성병원 (109명)
 
+<br>
 
 ### - Model
 
 ```
 U-Net / nnU-Net Version2
 ```
+
+<br>
 
 ### - Pre-processing Table
 
@@ -64,7 +72,7 @@ U-Net / nnU-Net Version2
 
 <br>
 
-### - 전처리 / 모델 성능 비교 Table
+### - Preprocessing / Model Performance Comparison Table
 
 <table border="1" style="border-collapse: collapse; width: 100%; table-layout: fixed;">
     <thead style="background-color: #f2f2f2;">
