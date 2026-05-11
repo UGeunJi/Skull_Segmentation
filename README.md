@@ -95,7 +95,7 @@ U-Net / nnU-Net Version2
             <td rowspan="2" align="center" style="text-align: center; vertical-align: middle;">13</td>
             <td align="center" style="height: 35px; text-align: center; vertical-align: middle;">-</td> 
             <td align="center" style="text-align: center; vertical-align: middle;">0.9468</td>
-            <td align="center" style="text-align: center; vertical-align: middle;"></td>
+            <td align="center" style="text-align: center; vertical-align: middle;"><strong>0.9665</strong></td>
             <td align="center" style="text-align: center; vertical-align: middle;">-</td>
         </tr>
         <tr>
@@ -122,7 +122,7 @@ U-Net / nnU-Net Version2
             <td align="center" rowspan="2" style="text-align: center; vertical-align: middle;">51</td>
             <td align="center" style="height: 35px; text-align: center; vertical-align: middle;">-</td>
             <td align="center" style="text-align: center; vertical-align: middle;">0.9533</td>
-            <td align="center" style="text-align: center; vertical-align: middle;"></td>
+            <td align="center" style="text-align: center; vertical-align: middle;"><strong>0.9735</strong></td>
             <td align="center" style="text-align: center; vertical-align: middle;">-</td>
         </tr>
         <tr>
@@ -136,7 +136,7 @@ U-Net / nnU-Net Version2
             <td align="center" rowspan="2" style="text-align: center; vertical-align: middle;">60</td>
             <td align="center" style="height: 35px; text-align: center; vertical-align: middle;">-</td>
             <td align="center" style="text-align: center; vertical-align: middle;">0.9683</td>
-            <td align="center" style="text-align: center; vertical-align: middle;"></td>
+            <td align="center" style="text-align: center; vertical-align: middle;"><strong>0.9782</strong></td>
             <td align="center" style="text-align: center; vertical-align: middle;">-</td>
         </tr>
         <tr>
