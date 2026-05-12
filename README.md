@@ -35,14 +35,10 @@
 
 ### - DB
 
-<br>
-
 #### Open DB
 - CQ500 (51명)
 - IMPACT (60명)
 - Totalsegmentor v2 (63명)
-
-<br>
 
 #### Private DB
 - 삼성병원 (109명)
@@ -101,7 +97,7 @@ U-Net / nnU-Net Version2
         <tr>
             <td align="center" style="text-align: center; vertical-align: middle;">V</td>
             <td align="center" style="text-align: center; vertical-align: middle;">0.8837</td>
-            <td align="center" style="text-align: center; vertical-align: middle;"></td>
+            <td align="center" style="text-align: center; vertical-align: middle;">0.9577</td>
             <td align="center" style="text-align: center; vertical-align: middle;">-</td>
         </tr>
         <tr>
@@ -165,6 +161,14 @@ U-Net / nnU-Net Version2
     </tbody>
 </table>
 
+<br>
 
+```
+2D U-Net보다 3D nnU-Net V2 모델의 성능이 모두 더 좋음.
+Orientation / Voxel Resampling 전처리의 성능은 일관적인 패턴이 보이진 않음.
+
+HU cliping, Normalization 등을 포함한 모든 전처리를 하지 않은 데이터셋부터 nnU-Net V2로 성능 다시 확인하고
+전처리 하나씩 대입해보며 성능 나아지는 전처리 선정 예정
+```
 
 
