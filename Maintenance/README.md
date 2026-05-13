@@ -1,4 +1,4 @@
 ## - 5/13
 
-### Scapula Segmentation Model Stair Artifact Issue
+### Scapula, humerus Segmentation Model Stair Artifact Issue
 
