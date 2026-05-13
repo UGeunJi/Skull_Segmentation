@@ -1,4 +1,4 @@
-# - 5/13
+# - 5/13 Stair Artifact Issue
 
 ```
 Scapula, humerus Segmentation Model Stair Artifact Issue
@@ -61,5 +61,16 @@ autoseg_pipeline.py
       └─ unet_model.py
 ```
 
+<br>
 
+## Solution
+
+```
+원인: 다양한 입력 CT 이미지에 대한 python 기반 framework의 대응 능력 부족
+- Slice thickness resampling
+        - resampling 발동 조건 (If문 수정)
+- Image size
+        - zero-padding 조건적으로 발동
+
+```
       
