@@ -13,7 +13,7 @@
 
 #### 3D nnU-Net 기반 모델 - 개발 중
 
-[Research Page](https://github.com/UGeunJi/Medical_Segmentation/tree/main/Research/Skull))
+[Research Page](https://github.com/UGeunJi/Medical_Segmentation/tree/main/Research/Skull)
 
 <br>
 
@@ -21,6 +21,6 @@
 
 #### 3D nnU-Net 기반 모델 - 개발 중
 
-[Research Page](https://github.com/UGeunJi/Medical_Segmentation/tree/main/Research/Spine))
+[Research Page](https://github.com/UGeunJi/Medical_Segmentation/tree/main/Research/Spine)
 
 <br>
