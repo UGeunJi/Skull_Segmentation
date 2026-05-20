@@ -36,7 +36,7 @@
 ### - DB
 
 #### Open DB
-- CQ500 (51명)
+- CQ500 (50명)
 - IMPACT (60명)
 - Totalsegmentor v2 (63명)
 
