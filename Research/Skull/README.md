@@ -265,6 +265,10 @@ Pre-training 기법 활용
 | CQ500 | 0.9293 |
 | IMPACT | 0.9367 |
 
+- Visualization
+
+<img width="778" height="465" alt="image" src="https://github.com/user-attachments/assets/d652861d-29d1-4a1d-bcd8-34dbf7e2cd48" />
+
 ```
 학습 데이터셋들이 Ordered Data보다 모두 FOV가 넓었기에 Inference 결과가 좋았음.
 ```
