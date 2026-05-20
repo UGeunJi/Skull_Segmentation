@@ -115,7 +115,7 @@ U-Net / nnU-Net Version2
         </tr>
         <tr>
             <td align="center" rowspan="2" style="text-align: center; vertical-align: middle;">CQ500</td>
-            <td align="center" rowspan="2" style="text-align: center; vertical-align: middle;">51</td>
+            <td align="center" rowspan="2" style="text-align: center; vertical-align: middle;">50</td>
             <td align="center" style="height: 35px; text-align: center; vertical-align: middle;">-</td>
             <td align="center" style="text-align: center; vertical-align: middle;">0.9533</td>
             <td align="center" style="text-align: center; vertical-align: middle;"><strong>0.9735</strong></td>
@@ -124,7 +124,7 @@ U-Net / nnU-Net Version2
         <tr>
             <td align="center" style="text-align: center; vertical-align: middle;">V</td>
             <td align="center" style="text-align: center; vertical-align: middle;">0.9536</td>
-            <td align="center" style="text-align: center; vertical-align: middle;"></td>
+            <td align="center" style="text-align: center; vertical-align: middle;">0.9641</td>
             <td align="center" style="text-align: center; vertical-align: middle;">-</td>
         </tr>
         <tr>
@@ -138,7 +138,7 @@ U-Net / nnU-Net Version2
         <tr>
             <td align="center" style="text-align: center; vertical-align: middle;">V</td>
             <td align="center" style="text-align: center; vertical-align: middle;">0.9018</td>
-            <td align="center" style="text-align: center; vertical-align: middle;"></td>
+            <td align="center" style="text-align: center; vertical-align: middle;">0.9645</td>
             <td align="center" style="text-align: center; vertical-align: middle;">-</td>
         </tr>
         <tr style="background-color: #f9f9f9;">
@@ -165,10 +165,22 @@ U-Net / nnU-Net Version2
 
 ```
 2D U-Net보다 3D nnU-Net V2 모델의 성능이 모두 더 좋음.
-Orientation / Voxel Resampling 전처리의 성능은 일관적인 패턴이 보이진 않음.
+Orientation / Voxel Resampling 전처리의 효과는 Thickness 등 이미 일관적으로 정리된 Open DB에는 악영향을, 정리되지 않은 Private DB엔 호영향을 끼침.
 
 HU cliping, Normalization 등을 포함한 모든 전처리를 하지 않은 데이터셋부터 nnU-Net V2로 성능 다시 확인하고
 전처리 하나씩 대입해보며 성능 나아지는 전처리 선정 예정
 ```
 
+<br>
 
+- Pure DB Performance Table
+
+| Dataset | Subjects | nnUNet v2 |
+| --- | --- | --- |
+| 삼성서울 | 109 | 0.8151 |
+| CQ500 | 50 | 0.9761 |
+| IMPACT | 60 | 0.9876 |
+
+```
+앞으로 실험할 전처리, Method, Model과 비교하는 데에 Baseline 성능이 될 것임.
+```
