@@ -184,3 +184,94 @@ HU cliping, Normalization 등을 포함한 모든 전처리를 하지 않은 데
 ```
 앞으로 실험할 전처리, Method, Model과 비교하는 데에 Baseline 성능이 될 것임.
 ```
+
+<br>
+
+- Intra / Cross Dataset Test Performance Table
+
+<table border="1" style="border-collapse: collapse; width: 100%; table-layout: fixed;">
+    <thead>
+        <tr>
+            <th style="padding: 10px; text-align: center; vertical-align: middle;"></th>
+            <th style="padding: 10px; text-align: center; vertical-align: middle;">Train Dataset</th>
+            <th style="padding: 10px; text-align: center; vertical-align: middle;">Test Dataset</th>
+            <th style="padding: 10px; text-align: center; vertical-align: middle;">nnU-Net V2</th>
+        </tr>
+    </thead>
+    <tbody style="text-align: center; vertical-align: middle;">
+        <tr>
+            <td rowspan="9" style="font-weight: bold; text-align: center; vertical-align: middle;">Experiments</td>
+            <td rowspan="3" style="text-align: center; vertical-align: middle;">삼성서울</td>
+            <td style="padding: 10px; text-align: center; vertical-align: middle;">삼성서울</td>
+            <td style="padding: 10px; text-align: center; vertical-align: middle;">0.9529</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; text-align: center; vertical-align: middle; background-color: #f2f2f2;">CQ500</td>
+            <td style="padding: 10px; text-align: center; vertical-align: middle; background-color: #f2f2f2;">0.9290</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; text-align: center; vertical-align: middle; background-color: #f2f2f2;">IMPACT</td>
+            <td style="padding: 10px; text-align: center; vertical-align: middle; background-color: #f2f2f2;">0.7700</td>
+        </tr>
+        <tr>
+            <td rowspan="3" style="text-align: center; vertical-align: middle;">CQ500</td>
+            <td style="padding: 10px; text-align: center; vertical-align: middle; background-color: #f2f2f2;">삼성서울</td>
+            <td style="padding: 10px; text-align: center; vertical-align: middle; background-color: #f2f2f2;">0.7508</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; text-align: center; vertical-align: middle;">CQ500</td>
+            <td style="padding: 10px; text-align: center; vertical-align: middle;">0.9721</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; text-align: center; vertical-align: middle; background-color: #f2f2f2;">IMPACT</td>
+            <td style="padding: 10px; text-align: center; vertical-align: middle; background-color: #f2f2f2;">0.7396</td>
+        </tr>
+        <tr>
+            <td rowspan="3" style="text-align: center; vertical-align: middle;">IMPACT</td>
+            <td style="padding: 10px; text-align: center; vertical-align: middle; background-color: #f2f2f2;">삼성서울</td>
+            <td style="padding: 10px; text-align: center; vertical-align: middle; background-color: #f2f2f2;">0.9141</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; text-align: center; vertical-align: middle; background-color: #f2f2f2;">CQ500</td>
+            <td style="padding: 10px; text-align: center; vertical-align: middle; background-color: #f2f2f2;">0.9383</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; text-align: center; vertical-align: middle;">IMPACT</td>
+            <td style="padding: 10px; text-align: center; vertical-align: middle;">0.9848</td>
+        </tr>
+    </tbody>
+</table>
+
+```
+- 분석
+데이터셋 간의 FOV(Field of View) 차이
+학습 데이터셋의 FOV가 Inference FOV보다 넓으면 성능이 0.92 이상으로 나옴.
+반대일 경우 0.7 부근으로 성능 하락함.
+
+- 대응
+ROI Crop 전처리를 통해 데이터 통일
+FOV 넓은 데이터셋으로만 학습
+Pre-training 기법 활용
+범용성 넓은 Transformer-based 모델 활용
+```
+
+<br>
+
+- Ordered Data Inference
+
+| Train Dataset | nnUNet V2 |
+| --- | --- |
+|삼성서울 | 0.9330 |
+| CQ500 | 0.9293 |
+| IMPACT | 0.9367 |
+
+```
+학습 데이터셋들이 Ordered Data보다 모두 FOV가 넓었기에 Inference 결과가 좋았음.
+```
+
+<br>
+
+- DB 간 FOV 시각화
+
+<img width="626" height="596" alt="image" src="https://github.com/user-attachments/assets/8e9bacb1-e5df-4e9c-b417-aafcc8b66da9" />
+
